@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GitHub JS Test</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
 
-  <h1>Welcome to my test page!</h1>
+    <style>
+      body {
+        margin: 100px;
+      }
+    </style>
+  </head>
 
-  <button onclick="showMessage()">Click Me</button>
+  <body>
+    <h2>bobbyhadz.com</h2>
 
-  <p id="message"></p> <!-- Message area -->
+    <button id="btn" onclick="handleClick()">Click</button>
 
-</body>
-  <script>
-    function showMessage() {
-      const message = document.getElementById('message');
-      message.innerText = "🎉 Button clicked! Hello from GitHub Pages! 🎉";
-    }
-    
-  </script>
+    <script>
+      const button = document.getElementById('btn');
 
-
+      function handleClick(event) {
+        console.log('button clicked');
+      }
+    </script>
+  </body>
 </html>
