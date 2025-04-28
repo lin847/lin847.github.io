@@ -34,8 +34,11 @@
 <body>
 
     <h1>Welcome to My GitHub Test Page!</h1>
-    <p >Click the button to see something cool!</p>
-    <button id="message" onclick="showMessage()">Click Me</button>
+    <p>Click the button to see something cool!</p>
+    
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p> <!-- Move the message here -->
 
     <script>
         function showMessage() {
