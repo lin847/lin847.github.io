@@ -1,52 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GitHub JS Test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-color: #f4f4f4;
-        }
-        button {
-            padding: 12px 24px;
-            font-size: 18px;
-            cursor: pointer;
-            border: none;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        #message {
-            margin-top: 20px;
-            font-size: 20px;
-            color: #333;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>GitHub JS Test</title>
 </head>
 <body>
 
-    <h1>Welcome to My GitHub Test Page!</h1>
-    <p>Click the button to see something cool!</p>
-    
-    <button onclick="showMessage()">Click Me</button>
+  <h1>Welcome to my test page!</h1>
 
-    <p id="message"></p> <!-- Move the message here -->
+  <button onclick="showMessage()">Click Me</button>
 
-    <script>
-        function showMessage() {
-            const message = document.getElementById('message');
-            message.innerText = "🎉 Button clicked! Hello from GitHub Pages! 🎉";
-            message.style.color = "#28a745"; // Make the message green
-        }
-    </script>
+  <p id="message"></p> <!-- Message area -->
+
+  <script>
+    function showMessage() {
+      const message = document.getElementById('message');
+      message.innerText = "🎉 Button clicked! Hello from GitHub Pages! 🎉";
+    }
+  </script>
 
 </body>
 </html>
